@@ -83,26 +83,10 @@
     .preview-name { font-size:20px; }
   }
 
-  /* ── FLOATING LOGOS ── */
-  #ka-floats {
-    position: fixed;
-    inset: 0;
-    pointer-events: none;
-    z-index: 2;
-    overflow: hidden;
-  }
-  .ka-float {
-    position: absolute;
-    width: auto;
-    height: auto;
-    pointer-events: none;
-    will-change: transform, opacity;
-  }
 </style>
 </head>
 <body>
 
-<div id="ka-floats" aria-hidden="true"></div>
 <div class="page-loader" id="pageLoader">
   <div class="loader-logo">Kreative <span>Additions</span></div>
   <div class="loader-bar"><div class="loader-bar-fill"></div></div>
@@ -316,12 +300,7 @@
     <div class="footer-brand">
       <div><img src="assets/images/logo.png" alt="Kreative Additions LLC" style="height:48px;width:auto;display:block;filter:brightness(0) invert(1);margin-bottom:4px;"></div>
       <p>Premium custom fabric printing for apparel, home décor, gifts, and branded merchandise. Bringing your vision to life with precision and artistry.</p>
-      <div class="footer-socials">
-        <a class="social-link" href="#" aria-label="Instagram">IG</a>
-        <a class="social-link" href="#" aria-label="Facebook">FB</a>
-        <a class="social-link" href="#" aria-label="Pinterest">PT</a>
-        <a class="social-link" href="#" aria-label="TikTok">TK</a>
-      </div>
+      <div class="footer-socials"><a class="social-link" href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a><a class="social-link" href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 10-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.51 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.46h-1.26c-1.24 0-1.62.77-1.62 1.56V12h2.77l-.44 2.89h-2.33v6.99A10 10 0 0022 12z"/></svg></a><a class="social-link" href="#" aria-label="Pinterest"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-3.64 19.32c-.09-.78-.17-1.97.04-2.82.18-.77 1.17-4.91 1.17-4.91s-.3-.6-.3-1.48c0-1.38.8-2.41 1.8-2.41.85 0 1.26.64 1.26 1.4 0 .85-.54 2.13-.82 3.31-.24 1 .5 1.8 1.48 1.8 1.78 0 3.14-1.87 3.14-4.57 0-2.39-1.72-4.06-4.17-4.06-2.84 0-4.51 2.13-4.51 4.33 0 .86.33 1.78.74 2.28.08.1.09.19.07.29-.08.3-.24.95-.27 1.08-.04.17-.14.21-.32.13-1.2-.56-1.95-2.3-1.95-3.72 0-3.03 2.2-5.81 6.35-5.81 3.33 0 5.92 2.37 5.92 5.55 0 3.31-2.09 5.98-5 5.98-.98 0-1.9-.51-2.21-1.11l-.6 2.29c-.22.84-.8 1.88-1.2 2.52A10 10 0 1012 2z"/></svg></a><a class="social-link" href="#" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-.88-.05A6.33 6.33 0 005.8 20.1a6.34 6.34 0 0010.86-4.43V8.93a8.16 8.16 0 004.77 1.52V7a4.85 4.85 0 01-1.84-.31z"/></svg></a></div>
     </div>
     <div class="footer-col"><h4>Pages</h4><ul>
       <li><a href="index.html">Home</a></li><li><a href="services.html">Services</a></li>
@@ -334,12 +313,7 @@
       <li><a href="services.html">Photo Printing</a></li><li><a href="services.html">Branded Merch</a></li>
       <li><a href="services.html">Event Wear</a></li><li><a href="services.html">Gift Items</a></li>
     </ul></div>
-    <div class="footer-col"><h4>Get in Touch</h4><ul>
-      <li>📍 344 Macroom Ct, Loganville, GA 30052</li>
-      <li><a href="tel:+14046834961">📞 (404) 683-4961</a></li>
-      <li><a href="mailto:bkngalame@gmail.com">✉ bkngalame@gmail.com</a></li>
-      <li>⏰ Mon–Fri, 9am–6pm EST</li>
-    </ul></div>
+    <div class="footer-col"><h4>Get in Touch</h4><ul class="footer-contact"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span>344 Macroom Ct, Loganville, GA 30052</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg><a href="tel:+14046834961">(404) 683-4961</a></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><a href="mailto:bkngalame@gmail.com">bkngalame@gmail.com</a></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><span>Mon–Fri, 9am–6pm EST</span></li></ul></div>
   </div>
   <div class="footer-bottom">
     <p>© 2025 Kreative Additions LLC. All rights reserved. · 344 Macroom Ct, Loganville, GA 30052 · <a href="tel:+14046834961" style="color:inherit">(404) 683-4961</a> · <a href="mailto:bkngalame@gmail.com" style="color:inherit">bkngalame@gmail.com</a></p>
@@ -349,7 +323,7 @@
 
 <div class="chatbot-toggle" id="chatToggle" onclick="toggleChat()" title="Chat with us">
   <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" stroke="#C9A84C" stroke-width="1.5" stroke-linejoin="round"/></svg>
-  <div class="chatbot-badge">1</div>
+  
 </div>
 <div class="chatbot-window" id="chatWindow">
   <div class="chat-header"><div class="chat-avatar">KA</div><div class="chat-header-info"><h4>Kreative Additions</h4><p>● Online now</p></div><button class="chat-close" onclick="toggleChat()">×</button></div>
@@ -366,58 +340,5 @@
   </div>
 </div>
 <script src="js/main.js"></script>
-<script>
-/* ── Floating KA logos — evenly zoned, no overlap ── */
-(function() {
-  var container = document.getElementById('ka-floats');
-  if (!container) return;
-
-  /* 8 fixed zones covering the viewport — each logo stays in its own cell */
-  var zones = [
-    { x:3,  y:5  }, { x:36, y:3  }, { x:68, y:5  },
-    { x:2,  y:42 },                  { x:72, y:40 },
-    { x:4,  y:76 }, { x:36, y:74 }, { x:70, y:75 }
-  ];
-
-  var size   = 90;   /* uniform size — clean and consistent */
-  var drift  = 22;   /* max px each logo drifts — stays inside its zone */
-  var op     = 0.10; /* subtle opacity */
-
-  zones.forEach(function(z, i) {
-    /* small random drift vectors that never go far enough to overlap */
-    var dx1 =  (i % 2 === 0 ? 1 : -1) * (10 + (i * 3) % drift);
-    var dy1 =  (i % 3 === 0 ? -1 : 1) * (8  + (i * 4) % drift);
-    var dx2 = -dx1 * 0.6;
-    var dy2 = -dy1 * 0.8;
-    var dur  = 14 + (i * 2.5) % 10;  /* 14 – 24 s, staggered */
-    var del  = -(i * 3.1);            /* immediate staggered start */
-
-    var el = document.createElement('img');
-    el.src = 'assets/images/logo.png';
-    el.setAttribute('aria-hidden', 'true');
-    el.style.cssText = [
-      'position:absolute',
-      'width:' + size + 'px',
-      'height:auto',
-      'left:' + z.x + '%',
-      'top:'  + z.y + '%',
-      'opacity:' + op,
-      'pointer-events:none',
-      'animation:kaZ' + i + ' ' + dur + 's ease-in-out ' + del + 's infinite'
-    ].join(';');
-    container.appendChild(el);
-
-    var s = document.createElement('style');
-    s.textContent =
-      '@keyframes kaZ' + i + '{' +
-        '0%  {transform:translate(0px,0px) rotate(0deg);opacity:' + op + '}' +
-        '35% {transform:translate(' + dx1 + 'px,' + dy1 + 'px) rotate(' + (dx1 * 0.12) + 'deg);opacity:' + (op + 0.03) + '}' +
-        '65% {transform:translate(' + dx2 + 'px,' + dy2 + 'px) rotate(' + (dy2 * 0.1) + 'deg);opacity:' + (op - 0.02) + '}' +
-        '100%{transform:translate(0px,0px) rotate(0deg);opacity:' + op + '}' +
-      '}';
-    document.head.appendChild(s);
-  });
-})();
-</script>
 </body>
 </html>
